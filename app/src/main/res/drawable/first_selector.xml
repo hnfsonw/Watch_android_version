@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 出现按下状态的时候，显示这张图片 -->
+    <item android:drawable="@drawable/ic_launcher" android:state_pressed="true"></item>
+    
+    <!-- 默认显示这张图片 -->
+    <item android:drawable="@drawable/ic_launcher"></item>
+
+</selector>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/longbaobao_background_write"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"></LinearLayout>
+    <LinearLayout
+        android:paddingBottom="16dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_like"
+            android:textColor="@color/title"
+            android:textSize="14sp"
+            android:text="@string/guess_you_like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+        <GridView
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:id="@+id/gv_listen_story"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp">
+        </GridView>
+</LinearLayout>

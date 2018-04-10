@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="EaseChatMessageList">
+        <attr name="msgListMyBubbleBackground" format="reference"/>
+        <attr name="msgListOtherBubbleBackground" format="reference"/>
+        <attr name="msgListShowUserAvatar" format="boolean"/>
+        <attr name="msgListShowUserNick" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 声明一个属性组， 这个属性组的名字，通常都是给哪个控件用的，就写哪个控件的名字 -->
+    <declare-styleable name="SettingItemView">
+        <!-- 这是声明了一个属性 title , 接收的类型是string -->
+        <attr name="title" format="string" />
+
+        <attr name="attribute" format="string" />
+
+        <!-- 这是声明了一个属性 bg, 接收的类型是 @引用类型 @drawable , 或者是可以填充颜色进来， #ff0000 -->
+        <attr name="bg" format="reference|color"/>
+        <attr name="bb" format="color"></attr>
+        <!-- 定义一个枚举属性，它可以写的值有以下三个， 分别是first， middle , last , 这三个对应的数值其实是 0 ， 1 ，2  -->
+        <attr name="bg2">
+            <enum name="first" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="last" value="2" />
+        </attr>
+        <!-- 这是用来控制是否显示右边的开关属性，如果不想显示，就给false , 默认是显示的。 -->
+        <attr name="isshow" format="boolean"></attr>
+
+        <attr name="imageview" format="boolean"></attr>
+
+        <attr name="right" format="boolean"></attr>
+
+        <attr name="text" format="boolean"></attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="MorningLayout">
+        <attr name="el_headerLayout" format="reference"/>
+        <attr name="el_contentLayout" format="reference" />
+        <attr name="el_duration" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RatioFrameLayout">
+        <attr name="picRatio" format="float"></attr>
+        <attr name="relative" format="enum">
+            <enum name="width" value="0"></enum>
+            <enum name="height" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+
+        <!--默认时候的字体大小-->
+        <attr name="pstsTabTextSize" format="dimension"/>
+        <!--默认时候的字体颜色-->
+        <attr name="pstsTabTextColor" format="color"/>
+        <!--选中时候的字体大小-->
+        <attr name="pstsSelectedTabTextSize" format="dimension"/>
+        <!--选中时候的字体颜色-->
+        <attr name="pstsSelectedTabTextColor" format="color"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="SpringView">
+        <attr name="type">
+            <enum name="overlap" value="0"/>
+            <enum name="follow" value="1"/>
+        </attr>
+        <attr name="give">
+            <enum name="both" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="none" value="3"/>
+        </attr>
+        <attr name="header" format="reference"/>
+        <attr name="footer" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ArrowRectangleView">
+        <attr name="arrow_width" format="dimension" />
+        <attr name="arrow_height" format="dimension" />
+        <attr name="arrow_offset" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="background_color" format="color" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_thickness" format="dimension" />
+    </declare-styleable>
+</resources>

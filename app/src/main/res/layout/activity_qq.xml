@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+        <include layout="@layout/include_title"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/send_btn"
+                android:textSize="14sp"
+                android:text="企业QQ添加方式:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="45dp"
+                android:textColor="@color/send_btn"
+                android:textSize="14sp"
+                android:text="1. QQ-联系人-添加-找公众号:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/qq_page1_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="45dp"
+                android:textColor="@color/send_btn"
+                android:textSize="14sp"
+                android:text="2. 输入400 068 4686 加关注"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/qq_page22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

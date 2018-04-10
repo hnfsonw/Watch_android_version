@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_cover"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_max_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:text="故事专辑"
+            android:layout_marginTop="34dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_right"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"/>
+
+            <ImageView
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="10dp"
+                android:visibility="visible"
+                android:id="@+id/iv_music"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/music"
+                android:layout_width="46dp"
+                android:layout_height="46dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:src="@mipmap/listen_story"
+            android:id="@+id/iv_cover"
+            android:layout_marginLeft="26dp"
+            android:layout_marginBottom="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/iv_cover"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <TextView
+            android:id="@+id/tv_size"
+            android:textSize="14sp"
+            android:textColor="@color/position_title"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:visibility="gone"
+            android:textColor="@color/position_title"
+            android:textSize="14sp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:text="批量下载"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/edge_shape_white_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_main_color"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_last_play"
+        android:padding="5dp"
+        android:background="@color/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:singleLine="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:id="@+id/tv_last_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_story_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

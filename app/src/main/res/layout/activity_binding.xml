@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"></include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="39dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="@string/scan_watch_binding"/>
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="35dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/textView6"/>
+
+            <TextView
+                android:id="@+id/tv_imei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn_unbind_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:text="@string/unbind_submit"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/text_pink"/>
+
+        <Button
+            android:id="@+id/btn_unbinding"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unbind_all"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@color/text_pink"/>
+    </LinearLayout>
+
+</LinearLayout>

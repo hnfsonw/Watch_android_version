@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/devicehistory_popviewbg"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/history_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text_Color_White_GradeFour"/>
+    
+    <TextView
+        android:id="@+id/history_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/history_time"
+        style="@style/Text_Color_White_GradeFour"/>
+</RelativeLayout>

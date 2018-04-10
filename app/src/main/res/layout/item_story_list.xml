@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@mipmap/item_story"
+        android:paddingLeft="14dp">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageview"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp">
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/trackname"
+                android:layout_width="246dp"
+                android:lines="2"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/add_device"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_story_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/phone_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_story_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/phone_grey"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginBottom="4dp"
+            android:padding="14dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:id="@+id/iv_story_download"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/watch_bound"/>
+
+        <TextView
+            android:textColor="@color/phone_grey"
+            android:layout_marginBottom="4dp"
+            android:visibility="visible"
+            android:layout_marginRight="12dp"
+            android:id="@+id/tv_create_time"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.loybin.baidumap.ui.view.CircleImageView
+            android:src="@mipmap/listen_story"
+            android:id="@+id/imageview"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

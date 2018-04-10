@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="-1dp"
+        android:background="@mipmap/rectangle_top"/>
+    <LinearLayout
+        android:background="@drawable/selete_shape_corners_tou_black_mask_home"
+        android:layout_width="174dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/select_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/select_list"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="174dp"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/text_main_color"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/selete_shape_corners_tou_black_mask_home"
+            android:id="@+id/ll_add_device"
+            android:orientation="horizontal"
+            android:layout_width="174dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/add_device"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:gravity="center"
+                android:textColor="@color/add_device"
+                android:textSize="14sp"
+                android:text="@string/add_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+        <include layout="@layout/include_title"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/application_of_the_base_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@null"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text=""
+                android:id="@+id/help_feedback"
+                android:lines="10"
+                android:gravity="top"
+                android:maxLength="200"
+                android:textColor="@color/the_main_color"
+                android:textColorHint="@color/text_main_color"
+                android:textSize="14sp"
+                android:hint="请输入您的反馈意见(字数范围在10至200以内)！"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/register"
+            android:textColor="@color/white"
+            android:text="@string/submit"
+            android:id="@+id/btn_submit"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</LinearLayout>

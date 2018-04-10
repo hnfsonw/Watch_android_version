@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/iv_oval"
+            android:layout_width="180dp"
+            android:layout_height="180dp"></ImageView>
+
+
+        <RelativeLayout
+            android:background="@mipmap/location_backs"
+            android:visibility="visible"
+            android:id="@+id/rl_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="48dp"
+            android:layout_height="58dp">
+
+                <com.loybin.baidumap.ui.view.CircleImageView
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="visible"
+                    android:id="@+id/civ_icon"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/rl_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_below="@id/civ_icon"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:id="@+id/tv_ms"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:background="@mipmap/text_backgroud"
+                    android:text="6分在前"
+                    android:layout_width="44dp"
+                    android:layout_height="22dp"/>
+        </LinearLayout>
+
+
+</RelativeLayout>

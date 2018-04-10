@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/include_title"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/application_of_the_base_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_binding"
+            android:textColor="@color/home_address"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/the_watch_has_binding_administrator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_ok_nike"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:src="@drawable/ok_nice"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <LinearLayout
+            android:id="@+id/et_select_call"
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_relation"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/the_main_color"
+                android:textSize="14sp"
+                android:hint="@string/select_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_request"
+            android:visibility="gone"
+            android:textColor="@color/the_main_color"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/the_request_has_been_sent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/register"
+            android:textColor="@color/white"
+            android:text="@string/send_apply"
+            android:id="@+id/btn_send"
+            android:textSize="16sp"
+            />
+
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/register"
+            android:textColor="@color/white"
+            android:text="@string/resend_apply"
+            android:id="@+id/btn_resend"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

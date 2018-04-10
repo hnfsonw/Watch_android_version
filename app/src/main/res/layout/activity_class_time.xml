@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:expandable="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_flag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="" />
+
+        <TextView
+            android:padding="12dp"
+            android:textColor="@color/the_main_color"
+            android:textSize="14sp"
+            android:text="名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.loybin.baidumap.ui.view.LastInputEditText
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/et_class_time_name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:hint="请输入名称"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/application_of_the_base_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.loybin.baidumap.ui.view.MorningLayout
+            android:layout_marginTop="12dp"
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandable:el_headerLayout="@layout/view_header"
+            expandable:el_contentLayout="@layout/view_content"
+            android:background="@color/white">
+        </com.loybin.baidumap.ui.view.MorningLayout>
+
+
+        <com.loybin.baidumap.ui.view.AfternoonLayout
+            android:layout_marginTop="12dp"
+            android:id="@+id/el_afternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandable:el_headerLayout="@layout/view_afternoon_header"
+            expandable:el_contentLayout="@layout/view_afternokn_content"
+            android:background="@color/white">
+        </com.loybin.baidumap.ui.view.AfternoonLayout>
+
+        <com.loybin.baidumap.ui.view.EveningLayout
+            android:layout_marginTop="12dp"
+            android:id="@+id/el_evening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandable:el_headerLayout="@layout/view_evening_header"
+            expandable:el_contentLayout="@layout/view_evening_content"
+            android:background="@color/white">
+        </com.loybin.baidumap.ui.view.EveningLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/select_week"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:padding="12dp"
+            android:textColor="@color/the_main_color"
+            android:textSize="14sp"
+            android:text="@string/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:gravity="center"
+                android:hint="@string/select_week"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/iv_regiht"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/regiht_"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

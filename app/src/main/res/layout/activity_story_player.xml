@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:background="@mipmap/story_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.loybin.baidumap.ui.view.CircleImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/sound_cover"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+       >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+          >
+
+            <TextView
+                android:text="00:00"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+            <com.loybin.baidumap.ui.view.PlayerSeekBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:id="@+id/seek_bar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:progressDrawable="@drawable/barcolor1"
+                android:layout_gravity="center_vertical"
+                android:thumb="@drawable/progressbar_btn"
+                />
+
+
+            <TextView
+                android:text="00:00"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center"
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:padding="8dp"
+            android:id="@+id/iv_play_way"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:src="@mipmap/xunhuan"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/play_or_pause"
+            android:layout_below="@id/ll_progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/play_btn"/>
+
+        <ImageView
+            android:id="@+id/pre_sound"
+            android:layout_toLeftOf="@id/play_or_pause"
+            android:layout_marginRight="-6dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/last_story"/>
+
+        <ImageView
+            android:id="@+id/iv_next_story"
+            android:layout_toRightOf="@id/play_or_pause"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/next_story"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_story_download"
+            android:layout_toRightOf="@id/iv_next_story"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:src="@mipmap/story_player_down"
+            />
+
+        <ImageView
+            android:id="@+id/iv_story_push"
+            android:visibility="visible"
+            android:layout_below="@+id/play_or_pause"
+            android:layout_centerHorizontal="true"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/story_play_watch"/>
+    </RelativeLayout>
+
+</LinearLayout>

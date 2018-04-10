@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hojy="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"></include>
+
+    <LinearLayout
+        android:background="@color/application_of_the_base_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:fillViewport="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="25dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="9dp">
+
+                <LinearLayout
+                    android:id="@+id/message_push_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/message_push" />
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/setting_grey"
+                        android:textSize="15sp"
+                        android:text="接受推送消息"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已开启"
+                        android:textColor="@color/setting_status"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/phone_grey"
+                        android:text="@string/message_push"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <com.loybin.baidumap.ui.view.LinearTvView
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edge_shape_white_selector"
+                android:id="@+id/lt_change_the_password"
+                hojy:isshow ="false"
+                hojy:right="true"
+                hojy:title="@string/change_the_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.loybin.baidumap.ui.view.LinearTvView>
+
+            <com.loybin.baidumap.ui.view.LinearTvView
+                android:background="@drawable/edge_shape_white_selector"
+                android:id="@+id/lt_clear_the_cache"
+                hojy:text="true"
+                hojy:attribute="0.0MB"
+                hojy:bb="@color/setting_grey"
+                hojy:title="@string/clear_the_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.loybin.baidumap.ui.view.LinearTvView>
+
+
+            <com.loybin.baidumap.ui.view.LinearTvView
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edge_shape_white_selector"
+                android:id="@+id/lt_check_version_update"
+                hojy:text="true"
+                hojy:bb="@color/title"
+                hojy:attribute="X1.01"
+                hojy:title="@string/check_the_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.loybin.baidumap.ui.view.LinearTvView>
+            <com.loybin.baidumap.ui.view.LinearTvView
+                android:visibility="gone"
+                android:background="@drawable/edge_shape_white_selector"
+                android:id="@+id/lt_about"
+                hojy:isshow ="false"
+                hojy:right="true"
+                hojy:title="@string/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.loybin.baidumap.ui.view.LinearTvView>
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/accout_now"/>
+
+                <TextView
+                    android:textColor="@color/setting_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp"
+                    android:text="当前账号"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:textColor="@color/setting_grey"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/register"
+                android:textColor="@color/white"
+                android:text="@string/exit"
+                android:id="@+id/btn_exit"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+</LinearLayout>

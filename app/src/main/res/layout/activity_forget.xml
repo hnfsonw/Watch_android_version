@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_login"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_flag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="30dp"
+                android:paddingTop="61dp">
+
+                <LinearLayout
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="24dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/verification_codes" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.5dp"
+                        android:src="@mipmap/separator_register" />
+
+                    <com.loybin.baidumap.ui.view.LastInputEditText
+                        android:id="@+id/et_code"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="14dp"
+                        android:background="@null"
+                        android:hint="@string/et_code_hint"
+                        android:inputType="number"
+                        android:textColor="@color/the_main_color"
+                        android:textColorHint="@color/et_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/tv_send_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/text_pink"
+                        android:textSize="10sp"
+                        android:text="@string/send_code"
+                        android:background="@mipmap/ic_btn_send" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/underline_register" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="24dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/password_register" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:src="@mipmap/separator_register" />
+
+                    <com.loybin.baidumap.ui.view.LastInputEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/password_error"
+                        android:inputType="textPassword"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="15dp"
+                        android:textColor="@color/the_main_color"
+                        android:textColorHint="@color/et_white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_no_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="14dp"
+                        android:clickable="true"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginRight="34dp"
+                        android:src="@mipmap/no_view_register"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/underline_register" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="24dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/password_register" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:src="@mipmap/separator_register" />
+
+                    <com.loybin.baidumap.ui.view.LastInputEditText
+                        android:id="@+id/et_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="15dp"
+                        android:textColor="@color/the_main_color"
+                        android:textColorHint="@color/et_white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/underline_register" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="26dp"
+                android:layout_marginTop="18dp"
+                android:paddingRight="26dp">
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:text="@string/submit"
+                    android:background="@mipmap/register" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

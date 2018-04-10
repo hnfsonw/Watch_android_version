@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/include_title"></include>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.loybin.baidumap.ui.view.SpringView
+            android:id="@+id/springview"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:dividerHeight="0dp"
+                android:divider="@null"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </com.loybin.baidumap.ui.view.SpringView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--tab部分-->
+        <com.loybin.baidumap.ui.view.PagerSlidingTabStripExtends
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:pstsIndicatorColor="@color/title"
+            app:pstsSelectedTabTextColor="@color/title"
+            app:pstsSelectedTabTextSize="16sp"
+            app:pstsTabTextColor="@color/tab_text_normal"
+            app:pstsTabTextSize="14sp"
+            ></com.loybin.baidumap.ui.view.PagerSlidingTabStripExtends>
+        <!--viewpager部分-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</LinearLayout>

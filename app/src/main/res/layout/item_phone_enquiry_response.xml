@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="13dp"
+        android:paddingRight="60dp">
+
+        <com.loybin.baidumap.ui.view.CircleImageView
+            android:id="@+id/iv_response_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+          />
+
+        <TextView
+            android:id="@+id/tv_check_result"
+            android:layout_toRightOf="@id/iv_response_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="web"
+            android:textSize="14sp"
+            android:textColor="@color/setting_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            style="@style/phone_enquiry_response"/>
+
+    </RelativeLayout>
+</LinearLayout>

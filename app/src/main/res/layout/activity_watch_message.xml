@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hojy="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/application_of_the_base_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <com.loybin.baidumap.ui.view.LinearTvView
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/tv_watch_version"
+                    android:background="@drawable/edge_shape_white_selector"
+                    hojy:text="true"
+                    hojy:bb="@color/title"
+                    hojy:attribute=""
+                    hojy:title="@string/watch_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.loybin.baidumap.ui.view.LinearTvView>
+
+
+                <com.loybin.baidumap.ui.view.LinearTvView
+                    android:id="@+id/tv_model"
+                    android:background="@drawable/edge_shape_white_selector"
+                    hojy:text="true"
+                    hojy:bb="@color/title"
+                    hojy:attribute=""
+                    hojy:title="@string/model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.loybin.baidumap.ui.view.LinearTvView>
+
+                <com.loybin.baidumap.ui.view.LinearTvView
+                    android:background="@drawable/edge_shape_white_selector"
+                    android:id="@+id/tv_imei_number"
+                    hojy:text="true"
+                    hojy:bb="@color/title"
+                    hojy:attribute=""
+                    hojy:title="@string/imei_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.loybin.baidumap.ui.view.LinearTvView>
+
+        <com.loybin.baidumap.ui.view.LinearTvView
+            android:background="@drawable/edge_shape_white_selector"
+            android:id="@+id/tv_watch_upgrade"
+            hojy:isshow ="true"
+            hojy:title="@string/watch_upgrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.loybin.baidumap.ui.view.LinearTvView>
+
+
+
+    </LinearLayout>
+</LinearLayout>

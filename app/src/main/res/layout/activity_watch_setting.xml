@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hojy="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"></include>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/application_of_the_base_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.loybin.baidumap.ui.view.LinearTvView
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:background="@drawable/edge_shape_white_selector"
+            android:id="@+id/lt_stranger_calls"
+            hojy:isshow ="true"
+            hojy:right="false"
+            hojy:title="@string/intercept_the_stranger_calls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.loybin.baidumap.ui.view.LinearTvView>
+
+        <com.loybin.baidumap.ui.view.LinearTvView
+            android:visibility="visible"
+            android:background="@drawable/edge_shape_white_selector"
+            android:id="@+id/lt_one_way_listening"
+            hojy:isshow ="false"
+            hojy:right="true"
+            hojy:title="@string/one_way_listening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.loybin.baidumap.ui.view.LinearTvView>
+
+        <com.loybin.baidumap.ui.view.LinearTvView
+            android:background="@drawable/edge_shape_white_selector"
+            android:id="@+id/lt_class_ban"
+            hojy:isshow ="false"
+            hojy:right="true"
+            hojy:title="@string/class_ban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.loybin.baidumap.ui.view.LinearTvView>
+
+        <com.loybin.baidumap.ui.view.LinearTvView
+            android:visibility="gone"
+            android:background="@drawable/edge_shape_white_selector"
+            android:id="@+id/lt_alarm_clock"
+            hojy:isshow ="false"
+            hojy:right="true"
+            hojy:title="@string/alarm_clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.loybin.baidumap.ui.view.LinearTvView>
+
+        <com.loybin.baidumap.ui.view.LinearTvView
+            android:background="@drawable/edge_shape_white_selector"
+            android:visibility="gone"
+            android:id="@+id/lt_wifi_setting"
+            hojy:isshow ="false"
+            hojy:right="true"
+            hojy:title="@string/wifi_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.loybin.baidumap.ui.view.LinearTvView>
+
+        <com.loybin.baidumap.ui.view.LinearTvView
+            android:background="@drawable/edge_shape_white_selector"
+            android:visibility="gone"
+            android:id="@+id/lt_wifi_settings"
+            hojy:isshow ="false"
+            hojy:right="true"
+            hojy:title="@string/wifi_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.loybin.baidumap.ui.view.LinearTvView>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_positioning_mode"
+        android:background="@drawable/edge_shape_white_selector"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/positioning_mode"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="14sp"
+            android:textColor="@color/setting_grey"
+            android:text="@string/positioning_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></View>
+
+        <TextView
+            android:id="@+id/tv_location_style"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_regiht"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/regiht_"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_main_color"
+            />
+
+    </LinearLayout>
+
+
+    <com.loybin.baidumap.ui.view.LinearTvView
+        android:id="@+id/ll_phone_mode"
+        android:visibility="visible"
+        android:background="@drawable/edge_shape_white_selector"
+        hojy:isshow ="true"
+        hojy:right="false"
+        hojy:title="@string/phone_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.loybin.baidumap.ui.view.LinearTvView>
+
+
+    <com.loybin.baidumap.ui.view.LinearTvView
+        android:visibility="visible"
+        android:background="@drawable/edge_shape_white_selector"
+        android:id="@+id/lt_time_switch_machine"
+        hojy:isshow ="true"
+        hojy:right="false"
+        hojy:title="@string/time_switch_machine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.loybin.baidumap.ui.view.LinearTvView>
+
+    <LinearLayout
+        android:id="@+id/ll_watch_off"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/mandatory_watch_off"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/setting_grey"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="@string/mandatory_watch_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_off"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/qq_red"
+            android:layout_gravity="center"
+            android:text="@string/is_power_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

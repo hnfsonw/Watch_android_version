@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+        android:background="@drawable/edge_shape_white_selector"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rl_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="10dp">
+
+        <com.loybin.baidumap.ui.view.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/other3x"/>
+
+        <LinearLayout
+            android:id="@+id/ll_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_relationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="爸爸"
+                android:textColor="@color/relationship_grey"
+                android:textSize="14dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="短号/亲情号："/>
+
+                <TextView
+                    android:id="@+id/tv_relationship_shortPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_not_set"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机："/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18682047036"
+                    android:textColor="@color/phone_black"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_administrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/administrator"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_watch"
+                    android:layout_centerVertical="true"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/watch_bound"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/tv_not_register"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/not_register"
+                    android:textColor="@color/et_white"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/iv_binding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/unbound"
+                android:textColor="@color/et_white"
+                android:textSize="12sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

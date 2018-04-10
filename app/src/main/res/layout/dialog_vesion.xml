@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/transparent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@drawable/home_shape_corners_tou_black_mask_home"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:background="@drawable/edge_shape_white_selector"
+                android:textColor="@color/btn_blue_normal"
+                android:textSize="20sp"
+                android:text="@string/found_the_new_version"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="3px"
+                android:layout_weight="1"
+                android:background="@color/btn_blue_pressed"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:id="@+id/tv_remove"
+                android:background="@drawable/edge_shape_white_selector"
+                android:textColor="@color/the_main_color"
+                android:textSize="16sp"
+                android:text="@string/version_described"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:lineSpacingExtra="2dp"
+                android:visibility="visible"
+                android:layout_marginRight="8dp"
+                android:id="@+id/tv_user_name"
+                android:textColor="@color/application_of_color"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/text_main_color"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:background="@drawable/edge_shape_white_selector"
+                android:gravity="center"
+                android:textColor="@color/text_hind_color"
+                android:textSize="16sp"
+                android:text="@string/Later_to_say_again"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="44dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp">
+
+                <View
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/small_ele"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"></View>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/determine"
+                android:background="@drawable/edge_shape_white_selector"
+                android:gravity="center"
+                android:textColor="@color/application_of_color"
+                android:textSize="16sp"
+                android:text="@string/update"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

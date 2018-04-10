@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_main">
+
+    <include layout="@layout/include_title"
+        android:id="@+id/in_title"/>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_all_items"
+        android:layout_below="@+id/in_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_mainList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="43dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ll_check_costs"
+            android:background="@mipmap/phone_cost_input_background"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_change_input"
+                android:src="@mipmap/keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/separator_phone_cost"/>
+
+            <TextView
+                android:id="@+id/tv_check_costs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="查询话费"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/separator_phone_cost"/>
+
+            <TextView
+                android:id="@+id/tv_check_flow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="查询流量"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@mipmap/phone_cost_input_background"
+            android:id="@+id/ll_check_costs_input"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/iv_change_check"
+                android:src="@mipmap/to_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="9dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/separator_phone_cost"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/ll_input_box"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_input_underline"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/command_input_under_line"/>
+
+                    <com.loybin.baidumap.ui.view.LastInputEditText
+                        android:id="@+id/et_check_command"
+                        android:layout_above="@id/iv_input_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:background="@null"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_send_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textSize="14sp"
+                    android:textColor="@color/send_btn"
+                    android:background="@mipmap/send_btn"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@mipmap/phone_cost_input_background"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/to_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="9dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/separator_phone_cost"/>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <RelativeLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/command_input_under_line"/>
+
+                <com.loybin.baidumap.ui.view.LastInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@null"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textSize="14sp"
+                android:textColor="@color/send_btn"
+                android:background="@mipmap/send_btn"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

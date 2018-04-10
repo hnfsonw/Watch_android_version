@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/include_title"></include>
+    <RelativeLayout
+        android:background="@color/application_of_the_base_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:textSize="14sp"
+            android:textColor="@color/text_hind_color"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="35dp"
+            android:text="@string/function_introduction"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:src="@mipmap/one_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@mipmap/register"
+            android:textColor="@color/white"
+            android:text="@string/to_one_way_listening"
+            android:id="@+id/btn_listening"
+            android:textSize="16sp"
+            />
+        <com.venmo.view.TooltipView
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:id="@+id/tv_tooltip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_listening"
+            android:layout_marginBottom="5dp"
+            android:layout_alignLeft="@+id/btn_listening"
+            android:layout_alignRight="@id/btn_listening"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            app:tooltipColor="#55000000"
+            app:anchoredView="@id/btn_listening" />
+    </RelativeLayout>
+
+</LinearLayout>

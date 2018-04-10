@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"></include>
+
+    <RelativeLayout
+        android:background="@color/application_of_the_base_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edge_shape_white_selector"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="19dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/call_position" />
+
+            <TextView
+                android:text="@string/address_name"
+                android:textSize="14sp"
+                android:textColor="@color/the_main_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.loybin.baidumap.ui.view.LastInputEditText
+                android:layout_marginLeft="32dp"
+                android:id="@+id/et_address_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/in_this_type_safety_address_name"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textColor="@color/the_main_color"
+                android:textColorHint="@color/text_main_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+            <View
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/text_main_color"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/edge_shape_white_selector"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="19dp"
+                android:layout_height="24dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/security" />
+
+            <TextView
+                android:text="@string/remind_the_way"
+                android:textSize="14sp"
+                android:textColor="@color/the_main_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_reminder"
+                android:layout_marginLeft="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/exit_to_remind"
+                android:singleLine="true"
+                android:textColor="@color/the_main_color"
+                android:textColorHint="@color/text_main_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+            <View
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/text_main_color"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_safe_addresses"
+            android:text="@string/determine_and_maintain_safe_addresses"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_shape_corners_tou_black_mask_code"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

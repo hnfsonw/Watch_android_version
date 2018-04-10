@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/deviceHistoryBasicLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/location"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/tv_before"
+            android:padding="8dp"
+            android:text= "@string/before"
+            android:textSize="14sp"
+            android:textColor="@color/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_calendar"
+            android:layout_centerInParent="true"
+            android:text="@string/calendar"
+            android:textSize="14sp"
+            android:textColor="@color/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <!--<ImageView-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_toRightOf="@id/tv_calendar"-->
+                <!--android:src="@mipmap/ic_launcher"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"/>-->
+
+            <TextView
+                android:id="@+id/tv_after"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="@string/after"
+                android:textSize="14sp"
+                android:textColor="@color/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.amap.api.maps.MapView
+            android:visibility="visible"
+            android:id="@+id/mapview_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_text"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:background="@mipmap/background_toolbar"/>
+
+                <ImageView
+                    android:id="@+id/location_ivPlay"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/play_trajectory" />
+
+                <TextView
+                    android:id="@+id/tv_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址："
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/address"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_toRightOf="@id/tv_address_title"
+                    android:layout_width="200dp"
+                    android:lines="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="深圳市南山区科技园科智西路"
+                    android:textSize="12sp"
+                    android:textColor="@color/address_detail"/>
+
+                <LinearLayout
+                    android:id="@+id/tv_time_toolbar"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/tv_address_title"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="时间："
+                        android:textSize="14sp"
+                        android:textColor="@color/address"/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="2016年4月27日"
+                        android:textSize="12sp"
+                        android:textColor="@color/address_detail"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_play"
+                    android:layout_below="@id/location_ivPlay"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="24dp"
+                    android:text="播放轨迹"
+                    android:textColor="@color/text_pink"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_above="@id/rl_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_shape_corners_tou_home"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"/>
+
+            <TextView
+                android:background="@drawable/home_shape_white_selector"
+                android:id="@+id/add_zoom"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="+"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:background="@drawable/home_shape_white_selector"
+                android:id="@+id/narrow_zoom"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="-"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

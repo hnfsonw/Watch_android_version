@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="TextView_TextSize_GradeTwo">14dp</dimen>
+    <dimen name="TextView_TextSize_GradeThree">12dp</dimen>
+    <dimen name="TextView_TextSize_GradeFour">10dp</dimen>
+    <dimen name="EditText_TextSize">14dp</dimen>
+    <dimen name="TextView_TextSize_GradeZero">18dp</dimen>
+    <dimen name="TextView_TextSize_GradeOne">16dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="size_avatar">48dp</dimen>
+    <dimen name="chat_nick_margin_left">12dp</dimen>
+    <dimen name="chat_nick_text_size">13sp</dimen>
+    <dimen name="margin_left">15dp</dimen>
+    <dimen name="poi_title_size">14sp</dimen>
+    <dimen name="text18">18sp</dimen>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@color/the_main_color"
+            android:text="@string/in_the_morning"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </TextView>
+        <ImageView
+            android:id="@+id/iv_morning_circle"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/circle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@drawable/edge_shape_white_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+        <View
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_main_color"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

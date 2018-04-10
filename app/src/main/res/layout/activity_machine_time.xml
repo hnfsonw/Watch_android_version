@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/include_title"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_watch_boot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@mipmap/item_background"
+            android:layout_height="wrap_content"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="33dp"
+                android:textSize="15sp"
+                android:textColor="@color/setting_grey"
+                android:text="定时开机"/>
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                  />
+
+                <TextView
+                    android:id="@+id/tv_select_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/setting_grey"
+                    android:textSize="17sp"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/watch_on_clock"-->
+                    <!--android:layout_toRightOf="@id/watch_on_hour"-->
+                    <!--android:layout_marginLeft="9dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text=":"-->
+                    <!--android:textColor="@color/setting_grey"-->
+                    <!--android:textSize="17sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_toRightOf="@+id/watch_on_clock"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="00"-->
+                    <!--android:paddingLeft="8dp"-->
+                    <!--android:textSize="17sp"-->
+                    <!--android:textColor="@color/setting_grey"/>-->
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_watch_off"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+        android:background="@mipmap/item_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="33dp"
+                android:textSize="15sp"
+                android:textColor="@color/setting_grey"
+                android:text="定时关机"/>
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                  />
+
+                <TextView
+                    android:id="@+id/tv_select_off_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/setting_grey"
+                    android:textSize="17sp"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/watch_off_clock"-->
+                    <!--android:layout_toRightOf="@id/watch_off_hour"-->
+                    <!--android:layout_marginLeft="9dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/setting_grey"-->
+                    <!--android:text=":"-->
+                    <!--android:textSize="17sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_toRightOf="@+id/watch_off_clock"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="00"-->
+                    <!--android:textColor="@color/setting_grey"-->
+                    <!--android:paddingLeft="8dp"-->
+                    <!--android:textSize="17sp"/>-->
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:background="@mipmap/register"
+            android:id="@+id/btn_save"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>
